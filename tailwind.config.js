@@ -14,6 +14,11 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    // screens:{
+    //   'sm': {'max': '640px'},
+    //   'md': {'max': '768px'},
+    //   'lg': {'max': '1024px'},
+    // }
   },
   plugins: [
     require('flowbite/plugin')

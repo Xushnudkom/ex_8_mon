@@ -29,7 +29,7 @@ const Index = () => {
             <Image src={LogoIcon} alt="logo" />
             <Image src={LogoTitle} alt="logo_title" />
           </Link>
-          <div className="hidden md:flex gap-6 items-center ml-[50px]">
+          <div className="flex gap-6 items-center ml-[50px]">
             {links.map((item, index) => (
               <Link
                 href={item.path}
@@ -53,7 +53,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <button
+          {/* <button
             onClick={toggleMenu}
             className="block md:hidden focus:outline-none"
           >
@@ -71,7 +71,7 @@ const Index = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-          </button>
+          </button> */}
         </div>
         {isOpen && (
           <div className="md:hidden bg-[#1F1D14] text-[#FFF] px-10 py-3">
