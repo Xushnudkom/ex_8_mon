@@ -16,28 +16,28 @@ export default function Home () {
 
         
       <section className="bg-[#F2F2F2] pb-[80px] ">
-        <div className="container mx-auto px-2 ">
-          <div className="pt-[76px]">
-            <h1 className="text-[32px] ml-[30px] mb-[31px]">Акция</h1>
-            <div>
+        <div className="container mx-auto  px-2 ">
+          <div className="pt-[76px] ml-[30px]">
+            <h1 className="text-[32px] mb-[1px] ml-[5px] lg:mb-[31px]">Акция</h1>
+            <div className='pl-[30px]'>
               <CaruselProduct text="Акция" bg="#FF1C1C"/>
             </div>
           </div>
-          <div className="pt-[1px]">
-            <h1 className="text-[32px] ml-[30px] mb-[31px]">Новинки</h1>
-            <div>
+          <div className="pt-[1px] ml-[30px]">
+            <h1 className="text-[32px] ml-[5px] mb-[1px] lg:mb-[31px]">Новинки</h1>
+            <div className='pl-[30px]'>
               <CaruselProduct text="Новый" bg="#917BFF"/>
             </div>
           </div>
-          <div className="pt-[1px]">
-            <h1 className="text-[32px] ml-[30px] mb-[31px]">Продукты</h1>
-            <div>
+          <div className="pt-[1px] ml-[30px]">
+            <h1 className="text-[32px] ml-[5px] mb-[1px] lg:mb-[31px]">Продукты</h1>
+            <div className='pl-[30px]'>
               <CaruselProduct />
             </div>
           </div>
-          <div className="pt-[1px]">
-            <h1 className="text-[32px] ml-[30px] mb-[31px]">ТОП продажа</h1>
-            <div>
+          <div className="pt-[1px] ml-[30px]">
+            <h1 className="text-[32px] ml-[5px] mb-[1px] lg:mb-[31px]">ТОП продажа</h1>
+            <div className='pl-[30px]'>
               <CaruselProduct text="ТОП" bg="#10DE24" />
             </div>
           </div>

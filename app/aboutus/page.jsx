@@ -11,52 +11,62 @@ import CaruselProduct from "@/components/main/carusel-prodoct";
 const Index = () => {
   return (
     <>
-         <div className='justify-center container mx-auto px-10 py-7'>
-         <div className='flex gap-3 items-center'>
-             <Image src={Home} alt='...'/>
-             <Link href="/">
-             <p className='text-[16px] opacity-70 hover:text-[#FBD029] hover:opacity-100'>Главная</p>
-             </Link>
-             <Image src={Arrow} alt='...'/>
-             <Link href="/product">
-             <p className='text-[16px] opacity-70 hover:text-[#FBD029] hover:opacity-100'>Продукты</p>
-             </Link>
-             <Image src={Arrow} alt='...'/>
-             <p className='text-[#1F1D14]'>О нас</p>
-           </div>
-          <div className='flex gap-7'>
-          <div className='mt-[35px] pt-[18px] h-[256px] pl-[9px] pb-[184px] pr-[77px] rounded-md bg-white w-[187px]'>
-            <div className='flex gap-2'>
-            <Image src={YellowIcon} alt='...'/>
-            <p>О нас</p>
+      <div className='container mx-auto px-4 sm:px-6 lg:px-10 py-6'>
+        <div className='flex items-center gap-2 md:gap-4 mb-6'>
+          <Image src={Home} alt='Home' className='w-5 h-5'/>
+          <Link href="/">
+            <p className='text-sm sm:text-base opacity-70 hover:text-[#FBD029] hover:opacity-100'>Главная</p>
+          </Link>
+          <Image src={Arrow} alt='Arrow' className='w-5 h-5'/>
+          <Link href="/product">
+            <p className='text-sm sm:text-base opacity-70 hover:text-[#FBD029] hover:opacity-100'>Продукты</p>
+          </Link>
+          <Image src={Arrow} alt='Arrow' className='w-5 h-5'/>
+          <p className='text-sm sm:text-base text-[#1F1D14]'>О нас</p>
+        </div>
+        
+        <div className='flex flex-col md:flex-row gap-6'>
+          <div className='flex-shrink-0 bg-white rounded-lg shadow-md  p-4 md:p-6'>
+            <div className='flex items-center gap-2 mb-4'>
+              <Image src={YellowIcon} alt='Yellow Icon' className='w-5 h-5'/>
+              <p className='text-sm sm:text-base'>О нас</p>
             </div>
-            <div>
-              <p className='text-center mt-5 pl-6'>Вканация</p>
+            <p className='text-center text-sm sm:text-base'>Вканация</p>
+          </div>
+
+          <div className='flex-1 bg-white rounded-lg shadow-md p-4 md:p-6'>
+            <h1 className='text-xl sm:text-2xl md:text-3xl font-semibold mb-4'>7 SPORT MARKET</h1>
+            <p className='text-sm sm:text-base mb-4'>
+              В составе томатов в большом количестве содержатся сахара, клетчатка, пектины, бета-каротин, витамины В1, В2, В5, В6, В9, С, К, Н и РР, а также нужные организму человека.
+            </p>
+            <p className='text-sm sm:text-base mb-4'>
+              Овощи содержат в себе много полезных витаминов, которые укрепляют здоровье и иммунитет и являются необходимым компонентом в рационе человека. Тепличный помидор - всегда доступен для вас и в сети супермаркетов “Makro” вы всегда можете найти его по выгодной цене и заказать их с доставкой в Ташкенте.
+            </p>
+            <p className='text-sm sm:text-base mb-4'>
+              В составе томатов в большом количестве содержатся сахара, клетчатка, пектины, бета-каротин, витамины В1, В2, В5, В6, В9, С, К, Н и РР, а также нужные организму человека.
+            </p>
+            <p className='text-sm sm:text-base mb-6'>
+              Овощи содержат в себе много полезных витаминов, которые укрепляют здоровье и иммунитет и являются необходимым компонентом в рационе человека. Тепличный помидор - всегда доступен для вас и в сети супермаркетов “Makro” вы всегда можете найти его по выгодной цене и заказать их с доставкой в Ташкенте.
+            </p>
+
+            <div className='flex gap-4 justify-end'>
+              <button className='flex items-center gap-2 text-sm sm:text-base'>
+                <p>Поделиться:</p>
+                <Image src={Share} alt='Share' className='w-4 h-4'/>
+              </button>
+              <button className='flex items-center gap-2 text-sm sm:text-base'>
+                <p>Распечатать:</p>
+                <Image src={Print} alt='Print' className='w-4 h-4'/>
+              </button>
             </div>
-           </div>
-           <div className='pt-[40px] pl-[50px] pr-[66px] pb-[70px] mt-[35px] rounded-md bg-white'>
-            <h1 className='text-[24px] font-semibold mb-[17px]'>7 SPORT MARKET</h1>
-            <p className='w-[598px] mb-[29px]'>В составе томатов в большом количестве содержатся сахара, клетчатка, пектины, бета-каротин, витамины В1, В2, В5, В6, В9, С, К, Н и РР, а также нужные организму человека.</p>
-            <p className='w-[598px] mb-[35px]'>Овощи содержат в себе много полезных витаминов, которые укрепляют здоровье и иммунитет и являются необходимым компонентом в рационе человека. Тепличный помидор - всегда доступен для вас и в сети супермаркетов “Makro” вы всегда можете найти его по выгодной цене и заказать их с доставкой в Ташкенте.</p>
-            <p className='w-[598px] mb-[29px]'>В составе томатов в большом количестве содержатся сахара, клетчатка, пектины, бета-каротин, витамины В1, В2, В5, В6, В9, С, К, Н и РР, а также нужные организму человека.</p>
-            <p className='w-[598px] mb-[62px]'>Овощи содержат в себе много полезных витаминов, которые укрепляют здоровье и иммунитет и являются необходимым компонентом в рационе человека. Тепличный помидор - всегда доступен для вас и в сети супермаркетов “Makro” вы всегда можете найти его по выгодной цене и заказать их с доставкой в Ташкенте.</p>
-           <div className='flex gap-7 justify-end'>
-           <button className='gap-2 flex items-center'>
-            <p className='text-[12px]'>Поделиться:</p>
-            <Image src={Share} alt='share'/>
-            </button>
-            <button className='gap-2 flex items-center'>
-            <p className='text-[12px]'>Распечатать:</p>
-            <Image src={Print} alt='print'/>
-            </button>
-           </div>
-           </div>
           </div>
-          <div className="pt-[76px]">
-            <h1 className="text-[32px] ml-[30px] mb-[20px]">Акция</h1>
-              <CaruselProduct text="Акция" bg="#FF1C1C"/>         
-          </div>
-         </div>
+        </div>
+
+        <div className="pl-12 pt-12 lg:pl-7 lg:pt-28 ">
+          <h1 className="text-xl font-medium sm:text-[32px]  ml-4 sm:ml-[-10px] mb-6">Акция</h1>
+          <CaruselProduct text="Акция" bg="#FF1C1C" />
+        </div>
+      </div>
     </>
   )
 }

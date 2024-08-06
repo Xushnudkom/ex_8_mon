@@ -28,13 +28,16 @@ const KeepMountedModal = ({ open, handleClose }) => {
       aria-labelledby="keep-mounted-modal-title"
       aria-describedby="keep-mounted-modal-description"
     >
-      <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] pt-[40px] pr-[40px] pl-[40px]  bg-white rounded shadow-lg">
+   <div className="flex justify-center items-center pt-[70px]">
+   <Box className=" w-[550px] pt-[40px] pr-[40px] pl-[40px]  bg-white rounded shadow-lg">
+        <div className="flex justify-end">
         <IconButton
-          className="absolute top-0 left-[490px]"
+          className="top-0 flex mb-[20px] items-end justify-end"
           onClick={handleClose}
         >
           <CloseIcon />
         </IconButton>
+        </div>
         <Typography
           id="keep-mounted-modal-title"
           variant="h6"
@@ -55,20 +58,21 @@ const KeepMountedModal = ({ open, handleClose }) => {
           onSubmit={handleSubmit}
           className="flex flex-col gap-4"
         >
-          <input type="text" placeholder="1234 5678 9012 3456" className="text-[20px] w-[350px] bg-[#F2F2F2] rounded-md border-none pt-[18px] pb-[18px] pl-[25px] pr-[100px]"/>
+          <input type="text" placeholder="1234 5678 9012 3456" className="text-[20px] w-[350px] bg-[#F2F2F2] rounded-md border-none p-4"/>
           <Typography className="text-[20px] font-medium mt-[10px]">
           Срок карты
           </Typography>
-          <input type="text" placeholder="__  / __" className="text-[20px] w-[350px] bg-[#F2F2F2] rounded-md border-none pt-[18px] pb-[18px] pl-[25px] pr-[100px]"/>
+          <input type="text" placeholder="__  / __" className="text-[20px] w-[350px] bg-[#F2F2F2] rounded-md border-none p-4 pr-[100px] mb-[40px]"/>
           <button
             type="submit"
             variant="contained"
-            className="bg-[#FBD029] mt-[40px] pt-[15px] pb-[15px] pr-[30px] pl-[30px] hover:bg-[#d7b427] text-black font-semibold text-[20px] py-2 rounded-md"
+            className="bg-[#FBD029] mb-[50px]  hover:bg-[#d7b427] text-black font-semibold text-[20px] py-2 rounded-md"
           >
             Оплатить
           </button>
         </Box>
       </Box>
+   </div>
     </Modal>
   );
 };

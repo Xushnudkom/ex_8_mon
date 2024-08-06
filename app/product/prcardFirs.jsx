@@ -14,6 +14,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from 'next/router';
 import Basket from "@/service/basket.service";
+import {Button} from "@mui/material";
 
 const Index = () => {
   const [data, setData] = useState([]);
@@ -88,17 +89,17 @@ const Index = () => {
   return (
     <section className="mb-6 px-2 md:px-0">
       <ToastContainer />
-      <div className="grid lg:flex gap-6">
+      <div className="grid lg:grid lg:grid-cols-3 lg:gap-4 gap-6">
         {data.length > 0 ? (
           data.map((product) => (
-            <div key={product.product_id} className="w-[290px] sm:w-[270px] bg-white rounded-t-md relative pt-4 mb-4">
-              <div className="ml-[220px]">
+            <div key={product.product_id} className="w-[290px] sm:w-[265px] bg-white rounded-t-md relative pt-4 mb-4">
+              <div className="absolute ml-[240px] mt-[-10px]">
              <Button
               onClick={(e) => {
                 e.stopPropagation();
                 handleLikeClick(product.product_id);
               }}
-              className="absolute justify-end  p-1"
+              className="p-1"
               style={{
                 minWidth: "unset",
                 padding: "0",

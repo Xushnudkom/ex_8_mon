@@ -29,33 +29,9 @@ const Index = () => {
             <Image src={LogoIcon} alt="logo" />
             <Image src={LogoTitle} alt="logo_title" />
           </Link>
-          <div className="flex gap-6 items-center ml-[50px]">
-            {links.map((item, index) => (
-              <Link
-                href={item.path}
-                key={index}
-                className="text-[16px] font-normal hover:text-[#FBD029]  transition-all"
-              >
-                {item.title}
-              </Link>
-            ))}
-            <div className="flex gap-8 items-center ml-[85px]">
-              <div className="flex gap-2 items-center font-normal hover:text-[#FBD029]">
-                <Image src={IconPhone} alt="iconPhone" className="w-5" />
-                <p className="text-[16px] font-normal font-sans">
-                  <span className="text-[13px] mr-2 opacity-95">+998 (90)</span>
-                  565-85-85
-                </p>
-              </div>
-              <div className="flex gap-2 items-center font-normal hover:text-[#FBD029]">
-                <Image src={IconEmail} alt="iconPhone" className="w-5" />
-                <p className="text-[16px] font-normal font-sans">info@gmail.com</p>
-              </div>
-            </div>
-          </div>
-          {/* <button
+          <button
             onClick={toggleMenu}
-            className="block md:hidden focus:outline-none"
+            className="block lg:hidden focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -71,10 +47,36 @@ const Index = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-          </button> */}
+          </button>
+          <div className="hidden lg:flex gap-[120px]">
+           <div className='flex gap-6'>
+           {links.map((item, index) => (
+              <Link
+                href={item.path}
+                key={index}
+                className="text-[16px] font-normal hover:text-[#FBD029] transition-all"
+              >
+                {item.title}
+              </Link>
+            ))}
+           </div>
+            <div className="flex gap-6 items-center">
+              <div className="flex gap-2 items-center font-normal hover:text-[#FBD029]">
+                <Image src={IconPhone} alt="iconPhone" className="w-5" />
+                <p className="text-[16px] font-normal font-sans">
+                  <span className="text-[13px] mr-2 opacity-95">+998 (90)</span>
+                  565-85-85
+                </p>
+              </div>
+              <div className="flex gap-2 items-center font-normal hover:text-[#FBD029]">
+                <Image src={IconEmail} alt="iconPhone" className="w-5" />
+                <p className="text-[16px] font-normal font-sans">info@gmail.com</p>
+              </div>
+            </div>
+          </div>
         </div>
         {isOpen && (
-          <div className="md:hidden bg-[#1F1D14] text-[#FFF] px-10 py-3">
+          <div className="lg:hidden bg-[#1F1D14] text-[#FFF] px-10 py-3">
             {links.map((item, index) => (
               <Link
                 href={item.path}

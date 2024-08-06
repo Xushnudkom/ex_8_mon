@@ -42,9 +42,9 @@ const Carusel = () => {
         return (
           <SwiperSlide key={index} className="w-[820x]  rounded-[20px]">
             <div className="h-[488px] w-full rounded-[20px] overflow-hidden ">
-              <div className="flex items-start justify-between">
-                <div className=" pt-[82px] pl-[70px]">
-                  <h1 className="text-[28px] font-extrabold">
+              <div className="block lg:flex items-start justify-between">
+                <div className="text-center pt-[60px] lg:pt-[82px] lg:pl-[70px]">
+                  <h1 className="text-10px lg:text-[28px] font-extrabold">
                     Бутсы Nike Phantom <br />
                     GT2 Elite FG
                   </h1>
@@ -57,11 +57,9 @@ const Carusel = () => {
                   <div className=" absolute top-[-75px] left-[130px]  rotate-[25deg] w-[355px] h-[921px]  bg-[#BDD400] z-0"></div>
                   <div className=" sticky z-10  pr-5">
                     <Image
-                      src={item}
-                      width={438}
-                      height={438}
+                      src={item}                      
                       alt="Carusel img"
-                      className=" z-100"
+                      className="w-[200px] ml-[60px] mt-[40px]  lg:w-[438px] lg:h-[438px] z-100"
                     />
                   </div>
                 </div>
